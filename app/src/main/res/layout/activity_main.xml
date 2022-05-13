@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/valorUnitário"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Valor unitário"
+        android:inputType="numberDecimal"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/quantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valorUnitário"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Informe a quantidade"
+        android:inputType="numberDecimal"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/desconto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantidade"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Informe o desconto em %"
+        android:inputType="numberDecimal"
+        android:padding="20dp" />
+
+
+    <EditText
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/venda"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:hint="Resultado"
+        android:padding="20dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/venda"
+        android:layout_below="@+id/desconto"
+        android:text="Calcular a venda"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_700"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:width="400dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
